@@ -16,7 +16,7 @@ namespace may_tinh
         {
             InitializeComponent();
         }
-        float n1,n2,n3,run;
+        float n1,n2,n3;
         string pheptinh;
 
         private void bt0_Click(object sender, EventArgs e)
