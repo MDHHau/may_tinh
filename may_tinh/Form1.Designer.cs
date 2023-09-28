@@ -46,6 +46,7 @@
             this.btChia = new System.Windows.Forms.Button();
             this.txtMH1 = new System.Windows.Forms.TextBox();
             this.btCham = new System.Windows.Forms.Button();
+            this.txtMH2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // bt7
@@ -228,12 +229,23 @@
             this.btCham.UseVisualStyleBackColor = true;
             this.btCham.Click += new System.EventHandler(this.btCham_Click);
             // 
+            // txtMH2
+            // 
+            this.txtMH2.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMH2.Location = new System.Drawing.Point(35, 12);
+            this.txtMH2.Multiline = true;
+            this.txtMH2.Name = "txtMH2";
+            this.txtMH2.Size = new System.Drawing.Size(297, 54);
+            this.txtMH2.TabIndex = 1;
+            this.txtMH2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(381, 492);
             this.Controls.Add(this.btCham);
+            this.Controls.Add(this.txtMH2);
             this.Controls.Add(this.txtMH1);
             this.Controls.Add(this.btCong);
             this.Controls.Add(this.bt3);
@@ -278,6 +290,7 @@
         private System.Windows.Forms.Button btChia;
         private System.Windows.Forms.TextBox txtMH1;
         private System.Windows.Forms.Button btCham;
+        private System.Windows.Forms.TextBox txtMH2;
     }
 }
 
