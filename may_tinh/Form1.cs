@@ -16,7 +16,7 @@ namespace may_tinh
         {
             InitializeComponent();
         }
-        float n1,n2;
+        float n1,n2,n3,run;
         string pheptinh;
 
         private void bt0_Click(object sender, EventArgs e)
@@ -38,6 +38,7 @@ namespace may_tinh
         private void bt3_Click(object sender, EventArgs e)
         {
             txtMH1.Text = txtMH1.Text + "3";
+            
         }
 
         private void bt4_Click(object sender, EventArgs e)
@@ -77,44 +78,41 @@ namespace may_tinh
 
         private void btCong_Click(object sender, EventArgs e)
         {
-            pheptinh = "cong";
-            txtMH2.Text = txtMH1.Text + "+";
+            pheptinh = "cong";           
             n1 = float.Parse(txtMH1.Text);
             txtMH1.Clear();
+            n3 = n1;
+            txtMH1.Text = n3.ToString() + "+";
         }
 
         private void btB_Click(object sender, EventArgs e)
         {
             if (pheptinh == "cong")
             {
-                n2 = n1 + float.Parse(txtMH1.Text);
-                txtMH2.Text= n1.ToString() + " + " + float.Parse(txtMH1.Text)+ "=";
-                txtMH1.Text = n2.ToString();
+                n2 = n1 + n3;
+                txtMH1.Text = n1.ToString() + " + " + n3.ToString() + "="+ n2.ToString();
             }
             if (pheptinh == "tru")
             {
-                n2 = n1 - float.Parse(txtMH1.Text);
-                txtMH2.Text = n1.ToString() + " - " + float.Parse(txtMH1.Text) + "=";
-                txtMH1.Text = n2.ToString();
+                n2 = n1 - n3;
+                txtMH1.Text = n1.ToString() + " - " + n3.ToString() + "=" + n2.ToString();
             }
             if (pheptinh == "nhan")
             {
-                n2 = n1 * float.Parse(txtMH1.Text);
-                txtMH2.Text = n1.ToString() + " * " + float.Parse(txtMH1.Text) + "=";
-                txtMH1.Text = n2.ToString();
+                n2 = n1 * n3;
+                txtMH1.Text = n1.ToString() + " * " + n3.ToString() + "=" + n2.ToString();
             }
             if (pheptinh == "chia")
             {
                 if (float.Parse(txtMH1.Text) == 0)
                 {
-                    txtMH2.Text = n1.ToString() + " / " ;
+                    
                     txtMH1.Text = "khong chia duoc";
                 }
                 else
                 {
-                    n2 = n1 / float.Parse(txtMH1.Text);
-                    txtMH2.Text = n1.ToString() + " / " + float.Parse(txtMH1.Text) + "=";
-                    txtMH1.Text = n2.ToString();
+                    n2 = n1 / n3;
+                    txtMH1.Text = n1.ToString() + " / " + n3.ToString() + "=" + n2.ToString();
                 }
             }
         }
@@ -122,31 +120,36 @@ namespace may_tinh
         private void btTru_Click(object sender, EventArgs e)
         {
             pheptinh = "tru";
-            txtMH2.Text = txtMH1.Text + "-";
             n1 = float.Parse(txtMH1.Text);
             txtMH1.Clear();
+            n3 = n1;
+            txtMH1.Text = n3.ToString() + "-";
         }
 
         private void btNhan_Click(object sender, EventArgs e)
         {
             pheptinh = "nhan";
-            txtMH2.Text = txtMH1.Text + "*";
+            
             n1 = float.Parse(txtMH1.Text);
             txtMH1.Clear();
+            n3 = n1;
+            txtMH1.Text = n3.ToString() + "*";
         }
 
         private void btChia_Click(object sender, EventArgs e)
         {
             pheptinh = "chia";
-            txtMH2.Text = txtMH1.Text + "/";
+            
             n1 = float.Parse(txtMH1.Text);
             txtMH1.Clear();
+            n3 = n1;
+            txtMH1.Text = n3.ToString() + "/";
         }
 
         private void btXoa_Click(object sender, EventArgs e)
         {
             txtMH1.Clear();
-            txtMH2.Clear();
+            
         }
     }
 }

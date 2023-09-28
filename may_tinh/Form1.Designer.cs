@@ -45,7 +45,6 @@
             this.btXoa = new System.Windows.Forms.Button();
             this.btChia = new System.Windows.Forms.Button();
             this.txtMH1 = new System.Windows.Forms.TextBox();
-            this.txtMH2 = new System.Windows.Forms.TextBox();
             this.btCham = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -212,22 +211,12 @@
             // txtMH1
             // 
             this.txtMH1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMH1.Location = new System.Drawing.Point(26, 54);
+            this.txtMH1.Location = new System.Drawing.Point(35, 67);
             this.txtMH1.Multiline = true;
             this.txtMH1.Name = "txtMH1";
-            this.txtMH1.Size = new System.Drawing.Size(299, 54);
+            this.txtMH1.Size = new System.Drawing.Size(297, 54);
             this.txtMH1.TabIndex = 1;
             this.txtMH1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtMH2
-            // 
-            this.txtMH2.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMH2.Location = new System.Drawing.Point(26, 14);
-            this.txtMH2.Multiline = true;
-            this.txtMH2.Name = "txtMH2";
-            this.txtMH2.Size = new System.Drawing.Size(299, 48);
-            this.txtMH2.TabIndex = 1;
-            this.txtMH2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btCham
             // 
@@ -245,7 +234,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(381, 492);
             this.Controls.Add(this.btCham);
-            this.Controls.Add(this.txtMH2);
             this.Controls.Add(this.txtMH1);
             this.Controls.Add(this.btCong);
             this.Controls.Add(this.bt3);
@@ -289,7 +277,6 @@
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btChia;
         private System.Windows.Forms.TextBox txtMH1;
-        private System.Windows.Forms.TextBox txtMH2;
         private System.Windows.Forms.Button btCham;
     }
 }
